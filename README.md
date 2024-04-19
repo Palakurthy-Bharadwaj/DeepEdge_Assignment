@@ -10,6 +10,17 @@ This project implements a deep learning approach using a Convolutional Neural Ne
 * OpenCV
 
 
+
+**Rationale behind the dataset choice:**
+
+- As mentioned in the document, the image size is fixed, i.e., 50x50. So irrespective of the choice of dataset, the maximum number of distinct images that can be generated that satisfy our task is 2500.
+- Randomly assigning the white pixel to each image ensures that the model learns to identify pixel positions based on image features rather than memorizing specific coordinates.
+- This approach promotes the development of a robust model that can accurately predict pixel locations, regardless of their placement within the image.
+- Exposing the model to a wide range of pixel positions through random assignment fosters generalization, preventing bias towards specific patterns.
+- This particular approach results in a controlled way of creating the dataset while not sacrificing randomness.
+
+
+
 **Data Generation (optional - already included in the repo)**
 
 The script `data_generation.py` generates a synthetic dataset of 50x50 grayscale images with a single white pixel at a random location. Corresponding labels (x, y) coordinates are saved in separate text files.
