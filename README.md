@@ -21,9 +21,11 @@ This project implements a deep learning approach using a Convolutional Neural Ne
 
 
 
+
 **Data Generation (optional - already included in the repo)**
 
 The script `data_generation.py` generates a synthetic dataset of 50x50 grayscale images with a single white pixel at a random location. Corresponding labels (x, y) coordinates are saved in separate text files.
+
 
 
 **Model Training (optional - saved model is provided in the repo)**
@@ -37,6 +39,7 @@ The script `model_training.py` performs the following steps:
 5. Saves the model.
 
 
+
 **Model Evaluation**
 
 The script `model_evaluation.py` performs the following steps:
@@ -47,6 +50,7 @@ The script `model_evaluation.py` performs the following steps:
 4. Predicts the (x, y) coordinates using the model.
 5. Loads the ground truth coordinates from the corresponding label file.
 6. Calculates and prints the prediction error (Mean Absolute Error, Root Mean Squared Error).
+
 
 
 **Running the Scripts locally:**
