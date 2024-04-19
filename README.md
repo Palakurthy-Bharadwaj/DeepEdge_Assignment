@@ -1,5 +1,3 @@
-**README.md**
-
 **Introduction**
 
 This project implements a deep learning approach using a Convolutional Neural Network (CNN) to predict the (x, y) coordinates of a single white pixel (value 255) in a 50x50 grayscale image.
